@@ -1,0 +1,383 @@
+// ============================================================
+// CAREERHUB - PRISMA SCHEMA
+// Datasource: PostgreSQL + ekstensi pgvector
+// ============================================================
+// Catatan: Prisma belum punya tipe native untuk `vector` (pgvector).
+// Kolom embedding didefinisikan pakai Unsupported("vector(768)") -
+// artinya Prisma Client TIDAK bisa query/filter kolom ini langsung
+// (mis. tidak ada `orderBy embedding <=> x`). Untuk semantic search
+// (cosine similarity, dsb), tetap perlu raw query lewat
+// `prisma.$queryRaw` yang manual menulis SQL-nya. Semua kolom lain
+// tetap bisa dipakai normal lewat Prisma Client seperti biasa.
+// Sesuaikan dimensi vector(768) dengan model embedding yang dipilih.
+// ============================================================
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [vector, uuid_ossp(map: "uuid-ossp")]
+}
+
+// ============================================================
+// 1. TAKSONOMI KOMPETENSI
+// ============================================================
+
+enum CompetencyType {
+  hard_skill
+  soft_skill
+}
+
+enum CompetencyStatus {
+  pending
+  approved
+  rejected
+  merged
+}
+
+model Competency {
+  competencyId    String            @id @default(uuid()) @map("competency_id") @db.Uuid
+  name            String            @unique @db.VarChar(150)
+  type            CompetencyType
+  category        String?           @db.VarChar(100)
+  description     String?
+  embedding       Unsupported("vector(768)")?
+  status          CompetencyStatus  @default(approved)
+  mergedIntoId    String?           @map("merged_into_id") @db.Uuid
+  mergedInto      Competency?       @relation("CompetencyMerge", fields: [mergedIntoId], references: [competencyId])
+  mergedFrom      Competency[]      @relation("CompetencyMerge")
+  createdBySource String?           @map("created_by_source") @db.VarChar(30)
+  createdAt       DateTime          @default(now()) @map("created_at")
+
+  courseLinks           CourseCompetency[]
+  careerFieldLinks      CareerFieldCompetency[]
+  studentActivities     StudentActivity[]
+  studentSelfAssessments StudentSoftSkillAssessment[]
+  alumniNeeded          AlumniResponseCompetencyNeeded[]
+  alumniGaps            AlumniResponseSkillGap[]
+  rawSubmissionMatches  RawSkillSubmission[]
+  curriculumGaps        CurriculumGapSnapshot[]
+
+  @@map("competencies")
+}
+
+model CareerField {
+  careerFieldId String   @id @default(uuid()) @map("career_field_id") @db.Uuid
+  name          String   @unique @db.VarChar(150)
+  description   String?
+  embedding     Unsupported("vector(768)")?
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  competencyLinks   CareerFieldCompetency[]
+  alumniResponses   AlumniSurveyResponse[]
+  studentMatchScores StudentCareerMatchScore[]
+
+  @@map("career_fields")
+}
+
+model CareerFieldCompetency {
+  careerFieldId     String      @map("career_field_id") @db.Uuid
+  competencyId      String      @map("competency_id") @db.Uuid
+  importanceWeight  Decimal     @default(1.00) @map("importance_weight") @db.Decimal(3, 2)
+  evidenceCount     Int         @default(0) @map("evidence_count")
+
+  careerField CareerField @relation(fields: [careerFieldId], references: [careerFieldId], onDelete: Cascade)
+  competency  Competency  @relation(fields: [competencyId], references: [competencyId], onDelete: Cascade)
+
+  @@id([careerFieldId, competencyId])
+  @@map("career_field_competencies")
+}
+
+// ============================================================
+// 2. DATA AKADEMIK (Career Path Mapping Mahasiswa)
+// ============================================================
+
+enum StudentStatus {
+  active
+  graduated
+  dropped_out
+  on_leave
+}
+
+model Program {
+  programId String  @id @default(uuid()) @map("program_id") @db.Uuid
+  name      String  @db.VarChar(150)
+  faculty   String? @db.VarChar(150)
+
+  students Student[]
+  courses  Course[]
+  alumni   Alumni[]
+  curriculumGaps CurriculumGapSnapshot[]
+
+  @@map("programs")
+}
+
+model Student {
+  studentId String        @id @default(uuid()) @map("student_id") @db.Uuid
+  nrp       String        @unique @db.VarChar(20)
+  fullName  String        @map("full_name") @db.VarChar(150)
+  programId String?       @map("program_id") @db.Uuid
+  entryYear Int           @map("entry_year")
+  status    StudentStatus @default(active)
+  createdAt DateTime      @default(now()) @map("created_at")
+
+  program Program? @relation(fields: [programId], references: [programId])
+
+  semesters       StudentSemester[]
+  courseGrades    StudentCourseGrade[]
+  activities      StudentActivity[]
+  selfAssessments StudentSoftSkillAssessment[]
+  matchScores     StudentCareerMatchScore[]
+
+  @@map("students")
+}
+
+model Course {
+  courseId  String  @id @default(uuid()) @map("course_id") @db.Uuid
+  programId String? @map("program_id") @db.Uuid
+  code      String  @db.VarChar(20)
+  name      String  @db.VarChar(150)
+  isCore    Boolean @default(false) @map("is_core")
+  sks       Int?    @db.SmallInt
+
+  program Program? @relation(fields: [programId], references: [programId])
+
+  competencyLinks CourseCompetency[]
+  grades          StudentCourseGrade[]
+
+  @@unique([programId, code])
+  @@map("courses")
+}
+
+model CourseCompetency {
+  courseId        String  @map("course_id") @db.Uuid
+  competencyId    String  @map("competency_id") @db.Uuid
+  relevanceWeight Decimal @default(1.00) @map("relevance_weight") @db.Decimal(3, 2)
+
+  course     Course     @relation(fields: [courseId], references: [courseId], onDelete: Cascade)
+  competency Competency @relation(fields: [competencyId], references: [competencyId], onDelete: Cascade)
+
+  @@id([courseId, competencyId])
+  @@map("course_competencies")
+}
+
+model StudentSemester {
+  studentSemesterId String   @id @default(uuid()) @map("student_semester_id") @db.Uuid
+  studentId         String   @map("student_id") @db.Uuid
+  semesterNumber    Int      @map("semester_number") @db.SmallInt
+  academicYear      String?  @map("academic_year") @db.VarChar(9)
+  ipSemester        Decimal? @map("ip_semester") @db.Decimal(3, 2)
+  ipkAtThatPoint    Decimal? @map("ipk_at_that_point") @db.Decimal(3, 2)
+  sksTaken          Int?     @map("sks_taken") @db.SmallInt
+
+  student Student @relation(fields: [studentId], references: [studentId], onDelete: Cascade)
+
+  @@unique([studentId, semesterNumber])
+  @@map("student_semesters")
+}
+
+model StudentCourseGrade {
+  id             String   @id @default(uuid()) @db.Uuid
+  studentId      String   @map("student_id") @db.Uuid
+  courseId       String   @map("course_id") @db.Uuid
+  semesterNumber Int      @map("semester_number") @db.SmallInt
+  gradeLetter    String?  @map("grade_letter") @db.VarChar(2)
+  gradePoint     Decimal? @map("grade_point") @db.Decimal(3, 2)
+
+  student Student @relation(fields: [studentId], references: [studentId], onDelete: Cascade)
+  course  Course  @relation(fields: [courseId], references: [courseId])
+
+  @@unique([studentId, courseId, semesterNumber])
+  @@map("student_course_grades")
+}
+
+enum ActivityType {
+  organization
+  certification
+  competition
+  internship
+}
+
+model StudentActivity {
+  activityId           String       @id @default(uuid()) @map("activity_id") @db.Uuid
+  studentId            String       @map("student_id") @db.Uuid
+  activityType          ActivityType @map("activity_type")
+  title                  String?      @db.VarChar(200)
+  organizerOrIssuer      String?      @map("organizer_or_issuer") @db.VarChar(150)
+  semesterNumber          Int?         @map("semester_number") @db.SmallInt
+  relatedCompetencyId      String?      @map("related_competency_id") @db.Uuid
+  description               String?
+  createdAt                  DateTime     @default(now()) @map("created_at")
+
+  student            Student     @relation(fields: [studentId], references: [studentId], onDelete: Cascade)
+  relatedCompetency  Competency? @relation(fields: [relatedCompetencyId], references: [competencyId])
+
+  @@map("student_activities")
+}
+
+model StudentSoftSkillAssessment {
+  id            String   @id @default(uuid()) @db.Uuid
+  studentId     String   @map("student_id") @db.Uuid
+  competencyId  String   @map("competency_id") @db.Uuid
+  selfRating    Int      @map("self_rating") @db.SmallInt
+  assessedAt    DateTime @default(now()) @map("assessed_at")
+
+  student    Student    @relation(fields: [studentId], references: [studentId], onDelete: Cascade)
+  competency Competency @relation(fields: [competencyId], references: [competencyId])
+
+  @@unique([studentId, competencyId, assessedAt])
+  @@map("student_soft_skill_assessments")
+}
+
+// ============================================================
+// 3. TRACER STUDY (Knowledge Base dari Alumni)
+// ============================================================
+
+model Alumni {
+  alumniId        String   @id @default(uuid()) @map("alumni_id") @db.Uuid
+  fullName        String?  @map("full_name") @db.VarChar(150)
+  programId       String?  @map("program_id") @db.Uuid
+  entryYear       Int?     @map("entry_year")
+  graduationYear  Int?     @map("graduation_year")
+  contactEmail    String?  @map("contact_email") @db.VarChar(150)
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  program   Program?               @relation(fields: [programId], references: [programId])
+  responses AlumniSurveyResponse[]
+
+  @@map("alumni")
+}
+
+enum RelevanceLevel {
+  very_relevant
+  somewhat_relevant
+  not_relevant
+}
+
+model AlumniSurveyResponse {
+  responseId              String          @id @default(uuid()) @map("response_id") @db.Uuid
+  alumniId                 String          @map("alumni_id") @db.Uuid
+  careerFieldId              String?         @map("career_field_id") @db.Uuid
+  jobTitle                    String?         @map("job_title") @db.VarChar(150)
+  companyName                   String?         @map("company_name") @db.VarChar(150)
+  monthsToFirstJob                Int?            @map("months_to_first_job")
+  relevanceToProgram                RelevanceLevel? @map("relevance_to_program")
+  adviceForCurrentStudents            String?         @map("advice_for_current_students")
+  submittedAt                           DateTime        @default(now()) @map("submitted_at")
+
+  alumni      Alumni       @relation(fields: [alumniId], references: [alumniId], onDelete: Cascade)
+  careerField CareerField? @relation(fields: [careerFieldId], references: [careerFieldId])
+
+  competenciesNeeded AlumniResponseCompetencyNeeded[]
+  skillGaps          AlumniResponseSkillGap[]
+  certifications     AlumniResponseCertification[]
+
+  @@map("alumni_survey_responses")
+}
+
+model AlumniResponseCompetencyNeeded {
+  responseId   String @map("response_id") @db.Uuid
+  competencyId String @map("competency_id") @db.Uuid
+
+  response   AlumniSurveyResponse @relation(fields: [responseId], references: [responseId], onDelete: Cascade)
+  competency Competency           @relation(fields: [competencyId], references: [competencyId])
+
+  @@id([responseId, competencyId])
+  @@map("alumni_response_competencies_needed")
+}
+
+model AlumniResponseSkillGap {
+  responseId   String @map("response_id") @db.Uuid
+  competencyId String @map("competency_id") @db.Uuid
+
+  response   AlumniSurveyResponse @relation(fields: [responseId], references: [responseId], onDelete: Cascade)
+  competency Competency           @relation(fields: [competencyId], references: [competencyId])
+
+  @@id([responseId, competencyId])
+  @@map("alumni_response_skill_gaps")
+}
+
+model AlumniResponseCertification {
+  id                    String  @id @default(uuid()) @db.Uuid
+  responseId             String  @map("response_id") @db.Uuid
+  certificationName        String? @map("certification_name") @db.VarChar(200)
+  perceivedUsefulness        Int?    @map("perceived_usefulness") @db.SmallInt
+
+  response AlumniSurveyResponse @relation(fields: [responseId], references: [responseId], onDelete: Cascade)
+
+  @@map("alumni_response_certifications")
+}
+
+enum SourceType {
+  alumni
+  student
+  staff
+}
+
+enum ReviewStatus {
+  pending
+  approved_as_new
+  merged
+  rejected
+}
+
+model RawSkillSubmission {
+  id                   String       @id @default(uuid()) @db.Uuid
+  sourceType             SourceType   @map("source_type")
+  sourceResponseId         String?      @map("source_response_id") @db.Uuid
+  rawText                    String       @map("raw_text") @db.VarChar(200)
+  suggestedEmbedding           Unsupported("vector(768)")?
+  closestCompetencyId            String?      @map("closest_competency_id") @db.Uuid
+  similarityScore                   Decimal?     @map("similarity_score") @db.Decimal(4, 3)
+  reviewStatus                        ReviewStatus @default(pending) @map("review_status")
+  createdAt                             DateTime     @default(now()) @map("created_at")
+
+  closestCompetency Competency? @relation(fields: [closestCompetencyId], references: [competencyId])
+
+  @@map("raw_skill_submissions")
+}
+
+// ============================================================
+// 4. HASIL MATCHING / OUTPUT (cache, di-refresh berkala)
+// ============================================================
+
+model StudentCareerMatchScore {
+  studentId       String   @map("student_id") @db.Uuid
+  careerFieldId   String   @map("career_field_id") @db.Uuid
+  matchScore      Decimal  @map("match_score") @db.Decimal(5, 2)
+  scoreBreakdown  Json?    @map("score_breakdown")
+  computedAt      DateTime @default(now()) @map("computed_at")
+
+  student     Student     @relation(fields: [studentId], references: [studentId], onDelete: Cascade)
+  careerField CareerField @relation(fields: [careerFieldId], references: [careerFieldId], onDelete: Cascade)
+
+  @@id([studentId, careerFieldId])
+  @@map("student_career_match_scores")
+}
+
+enum GapType {
+  missing_in_curriculum
+  underemphasized
+  well_covered
+  not_demanded
+}
+
+model CurriculumGapSnapshot {
+  id                  String   @id @default(uuid()) @db.Uuid
+  programId           String?  @map("program_id") @db.Uuid
+  competencyId        String?  @map("competency_id") @db.Uuid
+  taughtInCurriculum  Boolean? @map("taught_in_curriculum")
+  demandedByIndustry  Boolean? @map("demanded_by_industry")
+  demandCount         Int?     @map("demand_count")
+  gapType             GapType? @map("gap_type")
+  generatedAt         DateTime @default(now()) @map("generated_at")
+
+  program    Program?    @relation(fields: [programId], references: [programId])
+  competency Competency? @relation(fields: [competencyId], references: [competencyId])
+
+  @@map("curriculum_gap_snapshots")
+}
