@@ -1,0 +1,1625 @@
+{
+  "responden": [
+    {
+      "angkatan": 2020,
+      "prodi_id": 1,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Ikut magang dan mencari job opportunity selagi kuliah",
+      "skill_dibutuhkan_hard": [
+        1,
+        2,
+        3
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        5,
+        6
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 2,
+      "bidang_id": 2,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Explore lebih dari mata kuliah, karena bergantung dari kuliah saja tidak cukup. Ikut organisasi karena itu melatih time management, manajemen prioritas, dan melatih kemampuan membuat keputusan serta berkolaborasi dengan orang-orang sulit.",
+      "skill_dibutuhkan_hard": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "skill_dibutuhkan_soft": [
+        6,
+        15,
+        16,
+        17,
+        5
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [
+        1
+      ],
+      "pencapaian_kompetisi": [
+        2,
+        3
+      ],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 3,
+      "bidang_id": 3,
+      "waktu_kerja_pertama_bulan": 0,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "perform yg bagus saat magang supaya bisa ada kesempatan unt lanjut bekerja disana setelah lulus",
+      "skill_dibutuhkan_hard": [
+        18,
+        19,
+        20
+      ],
+      "skill_dibutuhkan_soft": [
+        16,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 4,
+      "bidang_id": 4,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Semangat",
+      "skill_dibutuhkan_hard": [
+        22
+      ],
+      "skill_dibutuhkan_soft": [
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 2,
+      "bidang_id": 3,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Belajar lebih giat",
+      "skill_dibutuhkan_hard": [
+        13,
+        23
+      ],
+      "skill_dibutuhkan_soft": [
+        24
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [
+        4
+      ],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 4,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        25,
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        4
+      ],
+      "skill_gap": [
+        17,
+        41
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": [
+        5
+      ]
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 4,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "tidak sesuai",
+      "saran_mahasiswa": "Perbanyak relasi yang dapat mendukung perbaikan masa depan",
+      "skill_dibutuhkan_hard": [
+        27,
+        28
+      ],
+      "skill_dibutuhkan_soft": [
+        29,
+        4,
+        21
+      ],
+      "skill_gap": [
+        5
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 5,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Ikut magang supaya dapat mempraktikkan ilmu yang dipelajari secara nyata",
+      "skill_dibutuhkan_hard": [
+        30,
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        17
+      ],
+      "skill_gap": [
+        5
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 2,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "tidak sesuai",
+      "saran_mahasiswa": "Ikut magang (di tempat yang bisa banyak belajar)",
+      "skill_dibutuhkan_hard": [
+        31
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        17,
+        32
+      ],
+      "skill_gap": [
+        26,
+        41
+      ],
+      "pencapaian_sertifikasi": [
+        6,
+        7
+      ],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 3,
+      "bidang_id": 6,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "tidak sesuai",
+      "saran_mahasiswa": "Semua perkerjaan butuh skill komunikasi",
+      "skill_dibutuhkan_hard": [
+        33
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        17,
+        21,
+        34,
+        35
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [
+        8
+      ],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 2,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "tidak sesuai",
+      "saran_mahasiswa": "Serius waktu belajar + kerja project, selama ada peluang buat improve (either magang/sertifikasi/workshop/etc.) ikuti aja, maksimalin fasilitas & benefit yg ada selama kuliah",
+      "skill_dibutuhkan_hard": [
+        36,
+        37,
+        38
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        17,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [
+        9,
+        10
+      ],
+      "pencapaian_proyek": [
+        11,
+        12
+      ]
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 7,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Perbanyak relasi, maksimalkan ilmu yang ada di kampus dan pelajari sesuatu yang tidak diajarkan di kampus",
+      "skill_dibutuhkan_hard": [
+        26,
+        39,
+        40
+      ],
+      "skill_dibutuhkan_soft": [
+        17,
+        41,
+        4,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 8,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Mengikuti magang lebih dulu sebelum skripsi",
+      "skill_dibutuhkan_hard": [
+        33
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        17,
+        42
+      ],
+      "skill_gap": [
+        26
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 6,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "lebih fokus mengasah soft skill dan hard skill yang di punya",
+      "skill_dibutuhkan_hard": [
+        43
+      ],
+      "skill_dibutuhkan_soft": [
+        42
+      ],
+      "skill_gap": [
+        5
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 7,
+      "bidang_id": 8,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "tidak ada",
+      "skill_dibutuhkan_hard": [
+        44
+      ],
+      "skill_dibutuhkan_soft": [
+        4
+      ],
+      "skill_gap": [
+        17,
+        26,
+        33
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 8,
+      "bidang_id": 9,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Perbanyak cari ilmu dan relasi di kampus",
+      "skill_dibutuhkan_hard": [
+        45,
+        46,
+        47,
+        2
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        21,
+        4
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [
+        13
+      ],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Belajar lebih giat agar ilmu yang disampaikan di kampus bisa berguna",
+      "skill_dibutuhkan_hard": [
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        41,
+        17,
+        4
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        43
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        17,
+        48
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 2,
+      "bidang_id": 3,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Banyak mencari relasi dan koneksi karena bisa membantu dalam mencari informasi tentang karir dan dalam masa berkarir berikutnya",
+      "skill_dibutuhkan_hard": [
+        49
+      ],
+      "skill_dibutuhkan_soft": [
+        50,
+        17,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [
+        14
+      ],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": [
+        15
+      ]
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 8,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Mengikuti alur kurikulum dan jangan menunda-nunda",
+      "skill_dibutuhkan_hard": [
+        51,
+        33
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        17,
+        42,
+        16
+      ],
+      "skill_gap": [
+        26
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 2,
+      "bidang_id": 10,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "tidak sesuai",
+      "saran_mahasiswa": "Maksimalkan magang senaksimal mungkin baik Relasi, pengalaman, dan lainnya.",
+      "skill_dibutuhkan_hard": [
+        26,
+        52,
+        53,
+        13
+      ],
+      "skill_dibutuhkan_soft": [
+        54,
+        17,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [
+        16
+      ],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 9,
+      "bidang_id": 11,
+      "waktu_kerja_pertama_bulan": 6,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Maksimalkan oportunity yang ada di kampus dan mulai cari pengalaman dari luar",
+      "skill_dibutuhkan_hard": [
+        51
+      ],
+      "skill_dibutuhkan_soft": [
+        21,
+        41,
+        55
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        51,
+        2
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        41,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        17,
+        41,
+        56
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 8,
+      "bidang_id": 12,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Perbanyak relasi dan mendalami materi kuliah yang diberikan",
+      "skill_dibutuhkan_hard": [
+        45,
+        46,
+        2
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        5,
+        41,
+        42,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 6,
+      "bidang_id": 8,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        26,
+        33,
+        40
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 10,
+      "bidang_id": 13,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        57,
+        58,
+        59,
+        60
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        5,
+        56
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 3,
+      "bidang_id": 14,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Belajar lebih giat, cari banyak pengalaman dan perdalam pemahaman materi",
+      "skill_dibutuhkan_hard": [
+        8,
+        2,
+        61
+      ],
+      "skill_dibutuhkan_soft": [
+        41,
+        5,
+        62,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 6,
+      "bidang_id": 15,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        51
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        17,
+        42,
+        41
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 11,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 6,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Perbanyak relasi dan lebih perdalam materi yang disampaikan saat kuliah",
+      "skill_dibutuhkan_hard": [
+        26,
+        39
+      ],
+      "skill_dibutuhkan_soft": [
+        17,
+        42,
+        4,
+        21,
+        63
+      ],
+      "skill_gap": [
+        41
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        2,
+        3,
+        1,
+        26,
+        39
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        41,
+        42
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Mulai memperbanyak relasi dan ilmu sejak dini",
+      "skill_dibutuhkan_hard": [
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        17,
+        64,
+        41
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 12,
+      "bidang_id": 16,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Belajar lebih giat dan cari banyak pengalaman agar mendapatkan inside baru",
+      "skill_dibutuhkan_hard": [
+        65,
+        25,
+        58,
+        1,
+        2
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        4,
+        21,
+        42
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Aktif panitia, perluas relasi dan manfaatkan peluang atau kegiatan yang menambah wawasan",
+      "skill_dibutuhkan_hard": [
+        66
+      ],
+      "skill_dibutuhkan_soft": [
+        67,
+        17,
+        41
+      ],
+      "skill_gap": [
+        26
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 3,
+      "bidang_id": 17,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Perdalam ilmu yang disampaikan dikampus dan gali ilmi baru yang diminati sejak dini",
+      "skill_dibutuhkan_hard": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "skill_dibutuhkan_soft": [
+        72,
+        73,
+        41,
+        4
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 6,
+      "bidang_id": 6,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Manfaatkan seluruh kesempatan yang ada untuk mencari pengalaman, relasi dan wawasan baru",
+      "skill_dibutuhkan_hard": [
+        74,
+        33
+      ],
+      "skill_dibutuhkan_soft": [
+        21,
+        41,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 7,
+      "bidang_id": 18,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        51
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        75,
+        41
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 4,
+      "bidang_id": 4,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Perluas relasi dan maksimalkan ilmu yang didapat",
+      "skill_dibutuhkan_hard": [
+        25,
+        51
+      ],
+      "skill_dibutuhkan_soft": [
+        41,
+        17,
+        75,
+        42,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 8,
+      "bidang_id": 9,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        1,
+        47,
+        2
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        4
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 13,
+      "bidang_id": 15,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Maksimalkan pembelajaran dan kegiatan yang ada untuk menambah ilmu dan relasi",
+      "skill_dibutuhkan_hard": [
+        33,
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        75,
+        41
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 8,
+      "bidang_id": 9,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        8,
+        2
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        24,
+        64,
+        17
+      ],
+      "skill_gap": [
+        41
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 6,
+      "bidang_id": 19,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        26,
+        76,
+        77
+      ],
+      "skill_dibutuhkan_soft": [
+        41,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 9,
+      "bidang_id": 20,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Maksimalkan pengalaman pemblajaran di kampus, tingkatkan relasi, dan cari ilmu di luar kampus sedini mungkin",
+      "skill_dibutuhkan_hard": [
+        51,
+        2,
+        78
+      ],
+      "skill_dibutuhkan_soft": [
+        21,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 14,
+      "bidang_id": 8,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        33,
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        75,
+        41,
+        17
+      ],
+      "skill_gap": [
+        4
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        33
+      ],
+      "skill_dibutuhkan_soft": [
+        24,
+        17
+      ],
+      "skill_gap": [
+        26,
+        41
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 13,
+      "bidang_id": 15,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        26,
+        40
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        17,
+        42
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 7,
+      "bidang_id": 21,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Perbanyak relasi dan maksimalkan seluruh kapasitas di kampus",
+      "skill_dibutuhkan_hard": [
+        51
+      ],
+      "skill_dibutuhkan_soft": [
+        41,
+        4,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 22,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Belajar lebih giat, gali potensi sejak dini dan perluas relasi",
+      "skill_dibutuhkan_hard": [
+        33,
+        79,
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        41
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 2,
+      "bidang_id": 17,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        80,
+        69,
+        70
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        41,
+        81
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 4,
+      "bidang_id": 23,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Maksimalkan materi yang didapat di kuliah dan mulai cari pengalaman baru",
+      "skill_dibutuhkan_hard": [
+        51,
+        25
+      ],
+      "skill_dibutuhkan_soft": [
+        24,
+        17,
+        21,
+        42,
+        4
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        17,
+        82
+      ],
+      "skill_gap": [
+        41
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 9,
+      "bidang_id": 24,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "tidak sesuai",
+      "saran_mahasiswa": "Tingkatkan relasi dan maksimalkan kesempatan yang ada selama kuliah",
+      "skill_dibutuhkan_hard": [
+        26,
+        83,
+        84
+      ],
+      "skill_dibutuhkan_soft": [
+        17,
+        21,
+        41
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        51
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        41
+      ],
+      "skill_gap": [
+        5
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 1,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        26,
+        39
+      ],
+      "skill_dibutuhkan_soft": [
+        41,
+        75
+      ],
+      "skill_gap": [
+        17
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 25,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Cari banyak pelajaran dari magang dan kuliah serta perbanyak relasi",
+      "skill_dibutuhkan_hard": [
+        26,
+        85,
+        39,
+        78
+      ],
+      "skill_dibutuhkan_soft": [
+        62,
+        5,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        17,
+        4
+      ],
+      "skill_gap": [
+        41
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 7,
+      "bidang_id": 8,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Maksimalkan seluruh kesempatan yang ada dj kuliah untuk menambah ilmu",
+      "skill_dibutuhkan_hard": [
+        26,
+        79
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        75,
+        41
+      ],
+      "skill_gap": [
+        17,
+        33
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 26,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        40,
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        21,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 14,
+      "bidang_id": 15,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        51
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        17,
+        41,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 8,
+      "bidang_id": 27,
+      "waktu_kerja_pertama_bulan": 6,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Belajar lebih tekun dan mulai cari pengalaman dari sejak kuliah",
+      "skill_dibutuhkan_hard": [
+        8,
+        2
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        42
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Cari relasi sebanyak banyaknya dan rajin belajar",
+      "skill_dibutuhkan_hard": [],
+      "skill_dibutuhkan_soft": [
+        24,
+        86,
+        41,
+        56
+      ],
+      "skill_gap": [
+        17,
+        26
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 2,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 2,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Maksimalkan kapasitas di kampus dan banyak belajar sesuatu yang baru",
+      "skill_dibutuhkan_hard": [
+        26,
+        33,
+        87
+      ],
+      "skill_dibutuhkan_soft": [
+        56,
+        41,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [
+        7
+      ],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 6,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Tekuni bidang yang diambil atau diminati dan cari ilmu ilmu baru juga",
+      "skill_dibutuhkan_hard": [
+        2,
+        36,
+        78
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        88,
+        42,
+        21
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 6,
+      "bidang_id": 8,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        4
+      ],
+      "skill_gap": [
+        17,
+        33
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 6,
+      "bidang_id": 28,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Belajar lebih giat dan dalami minat yang dimiliki",
+      "skill_dibutuhkan_hard": [
+        33,
+        26,
+        89
+      ],
+      "skill_dibutuhkan_soft": [
+        75,
+        21,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 14,
+      "bidang_id": 25,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Banyak belajar, pelajari hal hal baru dan perbanyak relasi teman",
+      "skill_dibutuhkan_hard": [
+        85,
+        51,
+        76
+      ],
+      "skill_dibutuhkan_soft": [
+        90,
+        21,
+        4
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 2,
+      "bidang_id": 3,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Perbanyak relasi, ikut banyak aktivitas dan maksimalin ilmu di kuliah",
+      "skill_dibutuhkan_hard": [
+        91,
+        18,
+        19,
+        53
+      ],
+      "skill_dibutuhkan_soft": [
+        42,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [
+        17,
+        7
+      ],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 7,
+      "bidang_id": 21,
+      "waktu_kerja_pertama_bulan": 5,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "Maksimalkan kapasitas dikampus untuk mencari ilmu",
+      "skill_dibutuhkan_hard": [
+        26,
+        92
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        41,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2020,
+      "prodi_id": 6,
+      "bidang_id": 5,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [],
+      "skill_dibutuhkan_soft": [
+        17,
+        41
+      ],
+      "skill_gap": [
+        26
+      ],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2019,
+      "prodi_id": 6,
+      "bidang_id": 1,
+      "waktu_kerja_pertama_bulan": 4,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        78,
+        2,
+        51
+      ],
+      "skill_dibutuhkan_soft": [
+        5,
+        41
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2021,
+      "prodi_id": 9,
+      "bidang_id": 20,
+      "waktu_kerja_pertama_bulan": 3,
+      "status_kesesuaian": "sesuai",
+      "saran_mahasiswa": "-",
+      "skill_dibutuhkan_hard": [
+        78,
+        39
+      ],
+      "skill_dibutuhkan_soft": [
+        21,
+        17
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    },
+    {
+      "angkatan": 2022,
+      "prodi_id": 6,
+      "bidang_id": 29,
+      "waktu_kerja_pertama_bulan": 1,
+      "status_kesesuaian": "sebagian sesuai",
+      "saran_mahasiswa": "Belajar sebaik mungkin dan cari relasi sebanyak yang dibisa",
+      "skill_dibutuhkan_hard": [
+        85,
+        40,
+        26
+      ],
+      "skill_dibutuhkan_soft": [
+        4,
+        41,
+        75
+      ],
+      "skill_gap": [],
+      "pencapaian_sertifikasi": [],
+      "pencapaian_kompetisi": [],
+      "pencapaian_proyek": []
+    }
+  ]
+}

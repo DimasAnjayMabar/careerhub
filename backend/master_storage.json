@@ -1,0 +1,1575 @@
+{
+  "prodi": [
+    {
+      "prodi_id": 1,
+      "nama_prodi": "Marketing Management",
+      "status": "approved",
+      "dibuat_dari": [
+        "Marketing Management"
+      ]
+    },
+    {
+      "prodi_id": 2,
+      "nama_prodi": "Informatika",
+      "status": "approved",
+      "dibuat_dari": [
+        "Informatika"
+      ]
+    },
+    {
+      "prodi_id": 3,
+      "nama_prodi": "Sistem Informasi Bisnis",
+      "status": "approved",
+      "dibuat_dari": [
+        "Sistem Informasi Bisnis"
+      ]
+    },
+    {
+      "prodi_id": 4,
+      "nama_prodi": "Teknik sipil",
+      "status": "approved",
+      "dibuat_dari": [
+        "Teknik sipil"
+      ]
+    },
+    {
+      "prodi_id": 5,
+      "nama_prodi": "Teknik Industri",
+      "status": "approved",
+      "dibuat_dari": [
+        "Teknik Industri"
+      ]
+    },
+    {
+      "prodi_id": 6,
+      "nama_prodi": "Manajemen Bisnis",
+      "status": "approved",
+      "dibuat_dari": [
+        "Manajemen Bisnis"
+      ]
+    },
+    {
+      "prodi_id": 7,
+      "nama_prodi": "tax accounting",
+      "status": "approved",
+      "dibuat_dari": [
+        "tax accounting"
+      ]
+    },
+    {
+      "prodi_id": 8,
+      "nama_prodi": "Desain Komunikasi Visual",
+      "status": "approved",
+      "dibuat_dari": [
+        "Desain Komunikasi Visual"
+      ]
+    },
+    {
+      "prodi_id": 9,
+      "nama_prodi": "Ilmu Komunikasi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Ilmu Komunikasi"
+      ]
+    },
+    {
+      "prodi_id": 10,
+      "nama_prodi": "Arsitektur",
+      "status": "approved",
+      "dibuat_dari": [
+        "Arsitektur"
+      ]
+    },
+    {
+      "prodi_id": 11,
+      "nama_prodi": "Hotel Management",
+      "status": "approved",
+      "dibuat_dari": [
+        "Hotel Management"
+      ]
+    },
+    {
+      "prodi_id": 12,
+      "nama_prodi": "Desain Interior",
+      "status": "approved",
+      "dibuat_dari": [
+        "Desain Interior"
+      ]
+    },
+    {
+      "prodi_id": 13,
+      "nama_prodi": "Finance and Investment",
+      "status": "approved",
+      "dibuat_dari": [
+        "Finance and Investment"
+      ]
+    },
+    {
+      "prodi_id": 14,
+      "nama_prodi": "Business Accounting",
+      "status": "approved",
+      "dibuat_dari": [
+        "Business Accounting"
+      ]
+    }
+  ],
+  "bidang": [
+    {
+      "bidang_id": 1,
+      "nama_bidang": "Digital Marketing",
+      "status": "approved",
+      "dibuat_dari": [
+        "Digital Marketing"
+      ]
+    },
+    {
+      "bidang_id": 2,
+      "nama_bidang": "Belum bekerja",
+      "status": "approved",
+      "dibuat_dari": [
+        "Belum bekerja"
+      ]
+    },
+    {
+      "bidang_id": 3,
+      "nama_bidang": "Software Engineer",
+      "status": "approved",
+      "dibuat_dari": [
+        "Software Engineer"
+      ]
+    },
+    {
+      "bidang_id": 4,
+      "nama_bidang": "Kontraktor",
+      "status": "approved",
+      "dibuat_dari": [
+        "Kontraktor"
+      ]
+    },
+    {
+      "bidang_id": 5,
+      "nama_bidang": "Berwirausaha",
+      "status": "approved",
+      "dibuat_dari": [
+        "Berwirausaha"
+      ]
+    },
+    {
+      "bidang_id": 6,
+      "nama_bidang": "Bank marketing",
+      "status": "approved",
+      "dibuat_dari": [
+        "Bank marketing"
+      ]
+    },
+    {
+      "bidang_id": 7,
+      "nama_bidang": "Material Management",
+      "status": "approved",
+      "dibuat_dari": [
+        "Material Management"
+      ]
+    },
+    {
+      "bidang_id": 8,
+      "nama_bidang": "Accounting",
+      "status": "approved",
+      "dibuat_dari": [
+        "Accounting"
+      ]
+    },
+    {
+      "bidang_id": 9,
+      "nama_bidang": "Graphic designer",
+      "status": "approved",
+      "dibuat_dari": [
+        "Graphic designer"
+      ]
+    },
+    {
+      "bidang_id": 10,
+      "nama_bidang": "Mekanik",
+      "status": "approved",
+      "dibuat_dari": [
+        "Mekanik"
+      ]
+    },
+    {
+      "bidang_id": 11,
+      "nama_bidang": "Guru Bahasa",
+      "status": "approved",
+      "dibuat_dari": [
+        "Guru Bahasa"
+      ]
+    },
+    {
+      "bidang_id": 12,
+      "nama_bidang": "Brand Designer",
+      "status": "approved",
+      "dibuat_dari": [
+        "Brand Designer"
+      ]
+    },
+    {
+      "bidang_id": 13,
+      "nama_bidang": "Arsitek",
+      "status": "approved",
+      "dibuat_dari": [
+        "Arsitek"
+      ]
+    },
+    {
+      "bidang_id": 14,
+      "nama_bidang": "UI/UX Designer",
+      "status": "approved",
+      "dibuat_dari": [
+        "UI/UX Designer"
+      ]
+    },
+    {
+      "bidang_id": 15,
+      "nama_bidang": "Finance",
+      "status": "approved",
+      "dibuat_dari": [
+        "Finance"
+      ]
+    },
+    {
+      "bidang_id": 16,
+      "nama_bidang": "Desain Interior Consultant",
+      "status": "approved",
+      "dibuat_dari": [
+        "Desain Interior Consultant"
+      ]
+    },
+    {
+      "bidang_id": 17,
+      "nama_bidang": "IT Support",
+      "status": "approved",
+      "dibuat_dari": [
+        "IT Support"
+      ]
+    },
+    {
+      "bidang_id": 18,
+      "nama_bidang": "accounting dan perpajakan",
+      "status": "approved",
+      "dibuat_dari": [
+        "accounting dan perpajakan"
+      ]
+    },
+    {
+      "bidang_id": 19,
+      "nama_bidang": "Business Analyst",
+      "status": "approved",
+      "dibuat_dari": [
+        "Business Analyst"
+      ]
+    },
+    {
+      "bidang_id": 20,
+      "nama_bidang": "Public Relations",
+      "status": "approved",
+      "dibuat_dari": [
+        "Public Relations"
+      ]
+    },
+    {
+      "bidang_id": 21,
+      "nama_bidang": "Perpajakan",
+      "status": "approved",
+      "dibuat_dari": [
+        "Perpajakan"
+      ]
+    },
+    {
+      "bidang_id": 22,
+      "nama_bidang": "Bank Accounting",
+      "status": "approved",
+      "dibuat_dari": [
+        "Bank Accounting"
+      ]
+    },
+    {
+      "bidang_id": 23,
+      "nama_bidang": "Site supervisor",
+      "status": "approved",
+      "dibuat_dari": [
+        "Site supervisor"
+      ]
+    },
+    {
+      "bidang_id": 24,
+      "nama_bidang": "Logistic Management",
+      "status": "approved",
+      "dibuat_dari": [
+        "Logistic Management"
+      ]
+    },
+    {
+      "bidang_id": 25,
+      "nama_bidang": "RnD",
+      "status": "approved",
+      "dibuat_dari": [
+        "RnD"
+      ]
+    },
+    {
+      "bidang_id": 26,
+      "nama_bidang": "Purchasing Management",
+      "status": "approved",
+      "dibuat_dari": [
+        "Purchasing Management"
+      ]
+    },
+    {
+      "bidang_id": 27,
+      "nama_bidang": "Design Staff",
+      "status": "approved",
+      "dibuat_dari": [
+        "Design Staff"
+      ]
+    },
+    {
+      "bidang_id": 28,
+      "nama_bidang": "Marketing Finance",
+      "status": "approved",
+      "dibuat_dari": [
+        "Marketing Finance"
+      ]
+    },
+    {
+      "bidang_id": 29,
+      "nama_bidang": "Production Management",
+      "status": "approved",
+      "dibuat_dari": [
+        "Production Management"
+      ]
+    }
+  ],
+  "skill": [
+    {
+      "skill_id": 1,
+      "nama_skill": "Adobe",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Adobe"
+      ]
+    },
+    {
+      "skill_id": 2,
+      "nama_skill": "canva",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "canva"
+      ]
+    },
+    {
+      "skill_id": 3,
+      "nama_skill": "capcut",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "capcut"
+      ]
+    },
+    {
+      "skill_id": 4,
+      "nama_skill": "teliti",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "teliti"
+      ]
+    },
+    {
+      "skill_id": 5,
+      "nama_skill": "kreatif",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "kreatif"
+      ]
+    },
+    {
+      "skill_id": 6,
+      "nama_skill": "teamwork",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "teamwork"
+      ]
+    },
+    {
+      "skill_id": 7,
+      "nama_skill": "SwiftUI",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "SwiftUI"
+      ]
+    },
+    {
+      "skill_id": 8,
+      "nama_skill": "Figma",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Figma"
+      ]
+    },
+    {
+      "skill_id": 9,
+      "nama_skill": "PBO",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "PBO"
+      ]
+    },
+    {
+      "skill_id": 10,
+      "nama_skill": "Tekweb",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Tekweb"
+      ]
+    },
+    {
+      "skill_id": 11,
+      "nama_skill": "Basis Data",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Basis Data"
+      ]
+    },
+    {
+      "skill_id": 12,
+      "nama_skill": "IMK __PROTECTED_0__",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "IMK __PROTECTED_0__"
+      ]
+    },
+    {
+      "skill_id": 13,
+      "nama_skill": "Python",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Python"
+      ]
+    },
+    {
+      "skill_id": 14,
+      "nama_skill": "AI/ML",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "AI/ML"
+      ]
+    },
+    {
+      "skill_id": 15,
+      "nama_skill": "Mendengarkan",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Mendengarkan"
+      ]
+    },
+    {
+      "skill_id": 16,
+      "nama_skill": "Berpikir Kritis",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Berpikir Kritis"
+      ]
+    },
+    {
+      "skill_id": 17,
+      "nama_skill": "Disiplin",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Disiplin"
+      ]
+    },
+    {
+      "skill_id": 18,
+      "nama_skill": "Golang",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Golang"
+      ]
+    },
+    {
+      "skill_id": 19,
+      "nama_skill": "MariaDB",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "MariaDB"
+      ]
+    },
+    {
+      "skill_id": 20,
+      "nama_skill": "MySql",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "MySql"
+      ]
+    },
+    {
+      "skill_id": 21,
+      "nama_skill": "komunikasi",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "komunikasi"
+      ]
+    },
+    {
+      "skill_id": 22,
+      "nama_skill": "Modelling",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Modelling"
+      ]
+    },
+    {
+      "skill_id": 23,
+      "nama_skill": "Finance Modelling",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Finance Modelling"
+      ]
+    },
+    {
+      "skill_id": 24,
+      "nama_skill": "Leadership",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Leadership"
+      ]
+    },
+    {
+      "skill_id": 25,
+      "nama_skill": "Autocad",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Autocad"
+      ]
+    },
+    {
+      "skill_id": 26,
+      "nama_skill": "Excel",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Excel"
+      ]
+    },
+    {
+      "skill_id": 27,
+      "nama_skill": "Nyetir kendaraan",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Nyetir kendaraan"
+      ]
+    },
+    {
+      "skill_id": 28,
+      "nama_skill": "data entry",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "data entry"
+      ]
+    },
+    {
+      "skill_id": 29,
+      "nama_skill": "Disiplin waktu",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Disiplin waktu"
+      ]
+    },
+    {
+      "skill_id": 30,
+      "nama_skill": "Bahasa Ingris",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Bahasa Ingris"
+      ]
+    },
+    {
+      "skill_id": 31,
+      "nama_skill": "Pekerjaan saya tidak berguna dengan jurusan saya",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Pekerjaan saya tidak berguna dengan jurusan saya"
+      ]
+    },
+    {
+      "skill_id": 32,
+      "nama_skill": "Logika",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Logika"
+      ]
+    },
+    {
+      "skill_id": 33,
+      "nama_skill": "Finance",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Finance"
+      ]
+    },
+    {
+      "skill_id": 34,
+      "nama_skill": "cakap",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "cakap"
+      ]
+    },
+    {
+      "skill_id": 35,
+      "nama_skill": "ngelobby",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "ngelobby"
+      ]
+    },
+    {
+      "skill_id": 36,
+      "nama_skill": "Video editing",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Video editing"
+      ]
+    },
+    {
+      "skill_id": 37,
+      "nama_skill": "content planning",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "content planning"
+      ]
+    },
+    {
+      "skill_id": 38,
+      "nama_skill": "graphic design",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "graphic design"
+      ]
+    },
+    {
+      "skill_id": 39,
+      "nama_skill": "Word",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Word"
+      ]
+    },
+    {
+      "skill_id": 40,
+      "nama_skill": "SAP",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "SAP"
+      ]
+    },
+    {
+      "skill_id": 41,
+      "nama_skill": "bertanggung jawab",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "bertanggung jawab"
+      ]
+    },
+    {
+      "skill_id": 42,
+      "nama_skill": "time management",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "time management"
+      ]
+    },
+    {
+      "skill_id": 43,
+      "nama_skill": "editing",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "editing"
+      ]
+    },
+    {
+      "skill_id": 44,
+      "nama_skill": "microsoft",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "microsoft"
+      ]
+    },
+    {
+      "skill_id": 45,
+      "nama_skill": "Adobe Photoshop",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Adobe Photoshop"
+      ]
+    },
+    {
+      "skill_id": 46,
+      "nama_skill": "Adobe Illustrator",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Adobe Illustrator"
+      ]
+    },
+    {
+      "skill_id": 47,
+      "nama_skill": "CorelDRAW",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "CorelDRAW"
+      ]
+    },
+    {
+      "skill_id": 48,
+      "nama_skill": "percaya diri",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "percaya diri"
+      ]
+    },
+    {
+      "skill_id": 49,
+      "nama_skill": "Full stack engineer",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Full stack engineer"
+      ]
+    },
+    {
+      "skill_id": 50,
+      "nama_skill": "Problem solve",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Problem solve"
+      ]
+    },
+    {
+      "skill_id": 51,
+      "nama_skill": "Microsoft Office",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Microsoft Office"
+      ]
+    },
+    {
+      "skill_id": 52,
+      "nama_skill": "AI Prompting",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "AI Prompting"
+      ]
+    },
+    {
+      "skill_id": 53,
+      "nama_skill": "SQL",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "SQL"
+      ]
+    },
+    {
+      "skill_id": 54,
+      "nama_skill": "Inisiatif tinggi",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Inisiatif tinggi"
+      ]
+    },
+    {
+      "skill_id": 55,
+      "nama_skill": "pemahaman beberapa bahasa",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "pemahaman beberapa bahasa"
+      ]
+    },
+    {
+      "skill_id": 56,
+      "nama_skill": "tekun",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "tekun"
+      ]
+    },
+    {
+      "skill_id": 57,
+      "nama_skill": "SketchUp",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "SketchUp"
+      ]
+    },
+    {
+      "skill_id": 58,
+      "nama_skill": "Lumion",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Lumion"
+      ]
+    },
+    {
+      "skill_id": 59,
+      "nama_skill": "Coohom",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Coohom"
+      ]
+    },
+    {
+      "skill_id": 60,
+      "nama_skill": "BIMx",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "BIMx"
+      ]
+    },
+    {
+      "skill_id": 61,
+      "nama_skill": "Microsoft Word",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Microsoft Word"
+      ]
+    },
+    {
+      "skill_id": 62,
+      "nama_skill": "open minded",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "open minded"
+      ]
+    },
+    {
+      "skill_id": 63,
+      "nama_skill": "adaptif",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "adaptif"
+      ]
+    },
+    {
+      "skill_id": 64,
+      "nama_skill": "tegas",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "tegas"
+      ]
+    },
+    {
+      "skill_id": 65,
+      "nama_skill": "Sketchup Pro",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Sketchup Pro"
+      ]
+    },
+    {
+      "skill_id": 66,
+      "nama_skill": "Microsoft office __PROTECTED_0__",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Microsoft office __PROTECTED_0__"
+      ]
+    },
+    {
+      "skill_id": 67,
+      "nama_skill": "Sabar",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Sabar"
+      ]
+    },
+    {
+      "skill_id": 68,
+      "nama_skill": "Sistem operasi",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Sistem operasi"
+      ]
+    },
+    {
+      "skill_id": 69,
+      "nama_skill": "hardware",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "hardware"
+      ]
+    },
+    {
+      "skill_id": 70,
+      "nama_skill": "software",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "software"
+      ]
+    },
+    {
+      "skill_id": 71,
+      "nama_skill": "network",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "network"
+      ]
+    },
+    {
+      "skill_id": 72,
+      "nama_skill": "Sigap",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Sigap"
+      ]
+    },
+    {
+      "skill_id": 73,
+      "nama_skill": "gesit",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "gesit"
+      ]
+    },
+    {
+      "skill_id": 74,
+      "nama_skill": "Microsoft dynamics 365",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Microsoft dynamics 365"
+      ]
+    },
+    {
+      "skill_id": 75,
+      "nama_skill": "jujur",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "jujur"
+      ]
+    },
+    {
+      "skill_id": 76,
+      "nama_skill": "Power BI",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Power BI"
+      ]
+    },
+    {
+      "skill_id": 77,
+      "nama_skill": "Business Process Modelling",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Business Process Modelling"
+      ]
+    },
+    {
+      "skill_id": 78,
+      "nama_skill": "Media Sosial",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Media Sosial"
+      ]
+    },
+    {
+      "skill_id": 79,
+      "nama_skill": "accounting",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "accounting"
+      ]
+    },
+    {
+      "skill_id": 80,
+      "nama_skill": "Networking",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Networking"
+      ]
+    },
+    {
+      "skill_id": 81,
+      "nama_skill": "solutif",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "solutif"
+      ]
+    },
+    {
+      "skill_id": 82,
+      "nama_skill": "teratur",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "teratur"
+      ]
+    },
+    {
+      "skill_id": 83,
+      "nama_skill": "ERP",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "ERP"
+      ]
+    },
+    {
+      "skill_id": 84,
+      "nama_skill": "WMS",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "WMS"
+      ]
+    },
+    {
+      "skill_id": 85,
+      "nama_skill": "trello",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "trello"
+      ]
+    },
+    {
+      "skill_id": 86,
+      "nama_skill": "inisiatif",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "inisiatif"
+      ]
+    },
+    {
+      "skill_id": 87,
+      "nama_skill": "Inventory app",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Inventory app"
+      ]
+    },
+    {
+      "skill_id": 88,
+      "nama_skill": "planning",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "planning"
+      ]
+    },
+    {
+      "skill_id": 89,
+      "nama_skill": "ERP sistem",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "ERP sistem"
+      ]
+    },
+    {
+      "skill_id": 90,
+      "nama_skill": "Explorasi",
+      "jenis_skill": "soft",
+      "status": "approved",
+      "dibuat_dari": [
+        "Explorasi"
+      ]
+    },
+    {
+      "skill_id": 91,
+      "nama_skill": "Flutter",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "Flutter"
+      ]
+    },
+    {
+      "skill_id": 92,
+      "nama_skill": "google sheet",
+      "jenis_skill": "hard",
+      "status": "approved",
+      "dibuat_dari": [
+        "google sheet"
+      ]
+    }
+  ],
+  "pencapaian": [
+    {
+      "pencapaian_id": 1,
+      "nama_pencapaian": "BNSP Associate Data Scientist",
+      "jenis": "sertifikasi",
+      "status": "approved",
+      "dibuat_dari": [
+        "BNSP Associate Data Scientist"
+      ]
+    },
+    {
+      "pencapaian_id": 2,
+      "nama_pencapaian": "International UI/UX Competition",
+      "jenis": "kompetisi",
+      "status": "approved",
+      "dibuat_dari": [
+        "International UI/UX Competition"
+      ]
+    },
+    {
+      "pencapaian_id": 3,
+      "nama_pencapaian": "Seabank Business Case Competition",
+      "jenis": "kompetisi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Seabank Business Case Competition"
+      ]
+    },
+    {
+      "pencapaian_id": 4,
+      "nama_pencapaian": "Microsoft Excel Expert",
+      "jenis": "sertifikasi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Microsoft Excel Expert"
+      ]
+    },
+    {
+      "pencapaian_id": 5,
+      "nama_pencapaian": "Capstone Project",
+      "jenis": "proyek",
+      "status": "approved",
+      "dibuat_dari": [
+        "Capstone Project"
+      ]
+    },
+    {
+      "pencapaian_id": 6,
+      "nama_pencapaian": "Java",
+      "jenis": "sertifikasi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Java"
+      ]
+    },
+    {
+      "pencapaian_id": 7,
+      "nama_pencapaian": "Oracle",
+      "jenis": "sertifikasi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Oracle"
+      ]
+    },
+    {
+      "pencapaian_id": 8,
+      "nama_pencapaian": "\"PLAY TO LEARN: INTEGRATING GAMIFICATION IN THE CLASSROOM\"",
+      "jenis": "sertifikasi",
+      "status": "approved",
+      "dibuat_dari": [
+        "\"PLAY TO LEARN: INTEGRATING GAMIFICATION IN THE CLASSROOM\""
+      ]
+    },
+    {
+      "pencapaian_id": 9,
+      "nama_pencapaian": "UI/UX",
+      "jenis": "kompetisi",
+      "status": "approved",
+      "dibuat_dari": [
+        "UI/UX"
+      ]
+    },
+    {
+      "pencapaian_id": 10,
+      "nama_pencapaian": "Marketing Case Competition",
+      "jenis": "kompetisi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Marketing Case Competition"
+      ]
+    },
+    {
+      "pencapaian_id": 11,
+      "nama_pencapaian": "TA",
+      "jenis": "proyek",
+      "status": "approved",
+      "dibuat_dari": [
+        "TA"
+      ]
+    },
+    {
+      "pencapaian_id": 12,
+      "nama_pencapaian": "Apple Academy",
+      "jenis": "proyek",
+      "status": "approved",
+      "dibuat_dari": [
+        "Apple Academy"
+      ]
+    },
+    {
+      "pencapaian_id": 13,
+      "nama_pencapaian": "Adobe Certified Professional",
+      "jenis": "sertifikasi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Adobe Certified Professional"
+      ]
+    },
+    {
+      "pencapaian_id": 14,
+      "nama_pencapaian": "Nvidia",
+      "jenis": "sertifikasi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Nvidia"
+      ]
+    },
+    {
+      "pencapaian_id": 15,
+      "nama_pencapaian": "Proyek dosen",
+      "jenis": "proyek",
+      "status": "approved",
+      "dibuat_dari": [
+        "Proyek dosen"
+      ]
+    },
+    {
+      "pencapaian_id": 16,
+      "nama_pencapaian": "Data Analytics Competition by Starcore and Komdigi",
+      "jenis": "kompetisi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Data Analytics Competition by Starcore and Komdigi"
+      ]
+    },
+    {
+      "pencapaian_id": 17,
+      "nama_pencapaian": "Cisco",
+      "jenis": "sertifikasi",
+      "status": "approved",
+      "dibuat_dari": [
+        "Cisco"
+      ]
+    }
+  ],
+  "alias": {
+    "teamwork": "teamwork",
+    "team work": "kerja tim",
+    "kerjasama tim": "kerja tim",
+    "kerjasama": "kerja tim",
+    "communication": "komunikasi",
+    "problem-solving": "problem solving",
+    "problem solving skill": "problem solving",
+    "time management": "time management",
+    "leadership": "Leadership",
+    "critical thinking": "berpikir kritis",
+    "negosiation": "negosiasi",
+    "adaptif": "adaptif",
+    "cepat belajar": "adaptif & cepat belajar",
+    "public speaking": "komunikasi",
+    "presentasi": "komunikasi",
+    "py": "python",
+    "js": "javascript",
+    "node.js": "javascript",
+    "nodejs": "javascript",
+    "git": "git & version control",
+    "git version control": "git & version control",
+    "dataviz": "data visualization",
+    "data visualisation": "data visualization",
+    "ml": "machine learning",
+    "seo": "seo/sem",
+    "sem": "seo/sem",
+    "seo sem": "seo/sem",
+    "powerbi": "power bi",
+    "power-bi": "power bi",
+    "restful api": "rest api",
+    "restful": "rest api",
+    "cloud": "cloud (aws/gcp)",
+    "aws": "cloud (aws/gcp)",
+    "gcp": "cloud (aws/gcp)",
+    "excel": "Excel",
+    "microsoft excel": "excel advanced",
+    "canva": "canva",
+    "adobe": "Adobe",
+    "photoshop": "figma",
+    "illustrator": "figma",
+    "sketch": "figma",
+    "teliti": "teliti",
+    "kreatif": "kreatif",
+    "detail oriented": "berpikir kritis",
+    "analitis": "berpikir kritis",
+    "analytical": "berpikir kritis",
+    "manajemen konflik": "negosiasi",
+    "conflict resolution": "negosiasi",
+    "if": "informatika",
+    "teknik informatika": "informatika",
+    "informatics": "informatika",
+    "si": "sistem informasi",
+    "sysinfo": "sistem informasi",
+    "information system": "sistem informasi",
+    "information systems": "sistem informasi",
+    "mb": "manajemen bisnis",
+    "manajemen": "manajemen bisnis",
+    "business management": "manajemen bisnis",
+    "ak": "akuntansi",
+    "accounting": "accounting",
+    "dkv": "desain komunikasi visual",
+    "deskomvis": "desain komunikasi visual",
+    "visual communication design": "desain komunikasi visual",
+    "se": "software engineering",
+    "software engineer": "Software Engineer",
+    "software developer": "software engineering",
+    "software dev": "software engineering",
+    "data": "data & analytics",
+    "data analyst": "data & analytics",
+    "data analytics": "data & analytics",
+    "data science": "data & analytics",
+    "data scientist": "data & analytics",
+    "dm": "digital marketing",
+    "digital marketer": "digital marketing",
+    "marketing": "digital marketing",
+    "fa": "finance & accounting",
+    "finance": "Finance",
+    "accounting staff": "finance & accounting",
+    "ui/ux": "UI/UX",
+    "ui ux": "ui/ux & product design",
+    "ux": "ui/ux & product design",
+    "ui": "ui/ux & product design",
+    "product design": "ui/ux & product design",
+    "product designer": "ui/ux & product design",
+    "ux designer": "ui/ux & product design",
+    "ui designer": "ui/ux & product design",
+    "aws certified cloud practitioner": "aws certified cloud practitioner",
+    "google analytics": "google analytics certificate",
+    "excel expert": "microsoft excel expert",
+    "google ux": "google ux design certificate",
+    "hackathon": "hackathon nasional",
+    "marketing management": "Marketing Management",
+    "digital marketing": "Digital Marketing",
+    "capcut": "capcut",
+    "informatika": "Informatika",
+    "belum bekerja": "Belum bekerja",
+    "swiftui": "SwiftUI",
+    "figma": "Figma",
+    "pbo": "PBO",
+    "tekweb": "Tekweb",
+    "basis data": "Basis Data",
+    "imk __protected_0__": "IMK __PROTECTED_0__",
+    "python": "Python",
+    "ai/ml": "AI/ML",
+    "mendengarkan": "Mendengarkan",
+    "berpikir kritis": "Berpikir Kritis",
+    "disiplin": "Disiplin",
+    "bnsp associate data scientist": "BNSP Associate Data Scientist",
+    "international ui/ux competition": "International UI/UX Competition",
+    "seabank business case competition": "Seabank Business Case Competition",
+    "sistem informasi bisnis": "Sistem Informasi Bisnis",
+    "golang": "Golang",
+    "mariadb": "MariaDB",
+    "mysql": "MySql",
+    "komunikasi": "komunikasi",
+    "teknik sipil": "Teknik sipil",
+    "kontraktor": "Kontraktor",
+    "modelling": "Modelling",
+    "finance modelling": "Finance Modelling",
+    "microsoft excel expert": "Microsoft Excel Expert",
+    "berwirausaha": "Berwirausaha",
+    "autocad": "Autocad",
+    "capstone project": "Capstone Project",
+    "nyetir kendaraan": "Nyetir kendaraan",
+    "data entry": "data entry",
+    "disiplin waktu": "Disiplin waktu",
+    "teknik industri": "Teknik Industri",
+    "bahasa ingris": "Bahasa Ingris",
+    "pekerjaan saya tidak berguna dengan jurusan saya": "Pekerjaan saya tidak berguna dengan jurusan saya",
+    "logika": "Logika",
+    "java": "Java",
+    "oracle": "Oracle",
+    "bank marketing": "Bank marketing",
+    "cakap": "cakap",
+    "ngelobby": "ngelobby",
+    "\"play to learn: integrating gamification in the classroom\"": "\"PLAY TO LEARN: INTEGRATING GAMIFICATION IN THE CLASSROOM\"",
+    "video editing": "Video editing",
+    "content planning": "content planning",
+    "graphic design": "graphic design",
+    "marketing case competition": "Marketing Case Competition",
+    "ta": "TA",
+    "apple academy": "Apple Academy",
+    "manajemen bisnis": "Manajemen Bisnis",
+    "material management": "Material Management",
+    "word": "Word",
+    "sap": "SAP",
+    "bertanggung jawab": "bertanggung jawab",
+    "teiliti": "teliti",
+    "editing": "editing",
+    "tax accounting": "tax accounting",
+    "microsoft": "microsoft",
+    "desain komunikasi visual": "Desain Komunikasi Visual",
+    "graphic designer": "Graphic designer",
+    "adobe photoshop": "Adobe Photoshop",
+    "adobe illustrator": "Adobe Illustrator",
+    "coreldraw": "CorelDRAW",
+    "adobe certified professional": "Adobe Certified Professional",
+    "tanggung jawab": "bertanggung jawab",
+    "percaya diri": "percaya diri",
+    "full stack engineer": "Full stack engineer",
+    "problem solve": "Problem solve",
+    "nvidia": "Nvidia",
+    "proyek dosen": "Proyek dosen",
+    "microsoft office": "Microsoft Office",
+    "mekanik": "Mekanik",
+    "ai prompting": "AI Prompting",
+    "sql": "SQL",
+    "inisiatif tinggi": "Inisiatif tinggi",
+    "data analytics competition by starcore and komdigi": "Data Analytics Competition by Starcore and Komdigi",
+    "ilmu komunikasi": "Ilmu Komunikasi",
+    "guru bahasa": "Guru Bahasa",
+    "pemahaman beberapa bahasa": "pemahaman beberapa bahasa",
+    "tekun": "tekun",
+    "brand designer": "Brand Designer",
+    "arsitektur": "Arsitektur",
+    "arsitek": "Arsitek",
+    "sketchup": "SketchUp",
+    "lumion": "Lumion",
+    "coohom": "Coohom",
+    "bimx": "BIMx",
+    "ui/ux designer": "UI/UX Designer",
+    "microsoft word": "Microsoft Word",
+    "open minded": "open minded",
+    "hotel management": "Hotel Management",
+    "tegas": "tegas",
+    "desain interior": "Desain Interior",
+    "desain interior consultant": "Desain Interior Consultant",
+    "sketchup pro": "Sketchup Pro",
+    "microsoft office __protected_0__": "Microsoft office __PROTECTED_0__",
+    "sabar": "Sabar",
+    "it support": "IT Support",
+    "sistem operasi": "Sistem operasi",
+    "hardware": "hardware",
+    "software": "software",
+    "network": "network",
+    "sigap": "Sigap",
+    "gesit": "gesit",
+    "microsoft dynamics 365": "Microsoft dynamics 365",
+    "accounting dan perpajakan": "accounting dan perpajakan",
+    "jujur": "jujur",
+    "finance and investment": "Finance and Investment",
+    "business analyst": "Business Analyst",
+    "power bi": "Power BI",
+    "business process modelling": "Business Process Modelling",
+    "public relations": "Public Relations",
+    "media sosial": "Media Sosial",
+    "business accounting": "Business Accounting",
+    "perpajakan": "Perpajakan",
+    "bank accounting": "Bank Accounting",
+    "networking": "Networking",
+    "solutif": "solutif",
+    "site supervisor": "Site supervisor",
+    "teratur": "teratur",
+    "logistic management": "Logistic Management",
+    "erp": "ERP",
+    "wms": "WMS",
+    "rnd": "RnD",
+    "trello": "trello",
+    "purchasing management": "Purchasing Management",
+    "design staff": "Design Staff",
+    "inisiatif": "inisiatif",
+    "inventory app": "Inventory app",
+    "video editting": "Video editing",
+    "planning": "planning",
+    "marketing finance": "Marketing Finance",
+    "erp sistem": "ERP sistem",
+    "explorasi": "Explorasi",
+    "flutter": "Flutter",
+    "cisco": "Cisco",
+    "google sheet": "google sheet",
+    "production management": "Production Management"
+  },
+  "meta": {
+    "total_skill": 92,
+    "total_pencapaian": 17,
+    "total_alias": 231,
+    "total_prodi": 14,
+    "total_bidang": 29
+  }
+}
