@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'python' => [
+        'url' => env('PYTHON_API_URL'),
+    ],
+
 ];
