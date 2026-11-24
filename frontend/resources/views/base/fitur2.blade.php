@@ -15,33 +15,41 @@
 
     <!-- menu menu -->
     <div class="grid grid-cols-4 gap-4 border-b border-gray-200">
-        <div class="pb-2 border-b-2 {{ request()->is('fitur1*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
-            <a href="/fitur1"
-                class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('fitur1*') ? ' text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
+        <div class="pb-2 border-b-2 {{ request()->is('skill-gap*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
+            <a href="/skill-gap"
+                class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('skill-gap*') ? ' text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
                 Ranking Skill Gap Terbesar
             </a>
         </div>
 
-        <div class="pb-2 border-b-2 {{ request()->is('fitur2*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
-            <a href="/fitur2"
-                class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('fitur2*') ? 'text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
+        <div class="pb-2 border-b-2 {{ request()->is('dibutuhkan-dirasakurang*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
+            <a href="/dibutuhkan-dirasakurang"
+                class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('dibutuhkan-dirasakurang*') ? 'text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
                 Dibutuhkan Industri VS Dirasa Kurang
             </a>
         </div>
 
-        <div class="pb-2 border-b-2 {{ request()->is('fitur3*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
-            <a href="/fitur3"
-                class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('fitur3*') ? 'text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
+        <div class="pb-2 border-b-2 {{ request()->is('tren-angkatan*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
+            <a href="/tren-angkatan"
+                class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('tren-angkatan*') ? 'text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
                 Tren Antar Angkatan
             </a>
         </div>
 
-        <div class="pb-2 border-b-2 {{ request()->is('fitur4*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
-            <a href="/fitur4"
-                class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('fitur4*') ? 'text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
+        <div class="pb-2 border-b-2 {{ request()->is('waktu-tunggu*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
+            <a href="/waktu-tunggu"
+                class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('waktu-tunggu*') ? 'text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
                 Waktu Tunggu VS Gap
             </a>
         </div>
+    </div>
+
+    <!-- isi content -->
+    <div class="mt-10">
+        @yield('skillgap-content')
+        @yield('dibutuhkan-content')
+        @yield('tren-angkatan-content')
+        @yield('waktu-tunggu-content')
     </div>
 
 @endsection
