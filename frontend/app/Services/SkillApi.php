@@ -32,12 +32,17 @@ class SkillApi
                 'bidang_id' => $bidangId,
             ]))
             ->throw()->json();
-    }
+        }
 
     public function feature3Filters(): array
-    {
-        return $this->client()->get('/feature3/filters')->throw()->json();
-    }
+        {
+            return $this->client()->get('/feature3/filters')->throw()->json();
+        }
+
+    public function feature4(): array
+        {
+            return $this->client()->get('/feature4/data')->throw()->json();
+        }
 
     public function match(array $skillIds): array
     {

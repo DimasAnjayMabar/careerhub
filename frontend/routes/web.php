@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ControllerFitur1;
 use App\Http\Controllers\ControllerFitur2;
+use App\Http\Controllers\ControllerFitur3;
+use App\Http\Controllers\ControllerFitur4;
 
 // Fitur 1
 Route::get('/', [ControllerFitur1::class, 'hardSkills']);
@@ -16,13 +18,17 @@ Route::get('/dibutuhkan-dirasakurang', [ControllerFitur2::class, 'dibutuhkanVsTi
 Route::get('/tren-angkatan', [ControllerFitur2::class, 'tren']);
 Route::get('/waktu-tunggu', [ControllerFitur2::class, 'waktuTunggu']);
 
+// Fitur 3
+Route::get('/dashboard-tracer-study', [ControllerFitur3::class, 'dashboard']);
 
-Route::get('/dashboard-tracer-study', function () {
-    return view('base/fitur3');
-});
-Route::get('/career-navigation', function () {
-    return view('base/fitur4');
-});
+// Fitur 4
+Route::get('/career-navigation/{tab?}', [ControllerFitur4::class, 'careerNavigation'])->where('tab', 'matcher');;
+Route::post('/career-navigation/match', [ControllerFitur4::class, 'match']);
+// Route::get('/career-navigation', function () {
+//     return view('base/fitur4');
+// });
+
+
 Route::get('/master-data', function () {
     return view('base/upload');
 });

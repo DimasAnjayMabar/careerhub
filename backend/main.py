@@ -341,8 +341,13 @@ def feature3_data(angkatan: Optional[int] = None, bidang_id: Optional[int] = Non
 
 
 # =========================================================
-# ROUTES: FEATURE 4 (matcher)
+# ROUTES: FEATURE 4
 # =========================================================
+
+@app.get("/feature4/data")
+def feature4_data():
+    return _payload_feature4()
+
 
 class MatchRequest(BaseModel):
     skill_ids: list[int]
@@ -353,14 +358,14 @@ def feature4_match(req: MatchRequest):
     result = feature4.match_skills(
         req.skill_ids, RESPONDEN, SKILL, PENCAPAIAN, BIDANG, top_n=5
     )
+
     if not result.get("ok"):
         return result
-    # gabungkan meta dari match_skills (jumlah_user_skill, catatan)
-    # dengan meta_block (jumlah_responden, ada_data, pesan)
+
     match_meta = result.get("meta", {})
     result["meta"] = meta_block(len(RESPONDEN), extra=match_meta)
-    return result
 
+    return result
 
 # =========================================================
 # ROUTES: SSE
