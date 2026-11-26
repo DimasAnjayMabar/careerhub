@@ -305,6 +305,73 @@ async def ingest(file: UploadFile = File(...)):
 
 
 # =========================================================
+# ROUTES: RESPONDEN
+# =========================================================
+
+@app.get("/responden")
+def get_responden(page: int = 1, limit: int = 10):
+
+        # Mapping ID menjadi nama
+        prodi_map = {
+            p["prodi_id"]: p["nama_prodi"]
+            for p in PRODI
+        }
+
+        bidang_map = {
+            b["bidang_id"]: b["nama_bidang"]
+            for b in BIDANG
+        }
+
+        # Siapkan data untuk tabel Laravel
+        rows = []
+
+        for r in RESPONDEN:
+            rows.append({
+                "angkatan": r.get("angkatan"),
+                "prodi": prodi_map.get(r.get("prodi_id"), "-"),
+                "bidang": bidang_map.get(r.get("bidang_id"), "-"),
+                "waktu_tunggu": r.get("waktu_kerja_pertama_bulan", 0),
+                "kesesuaian": r.get("status_kesesuaian", "-"),
+            })
+
+        # Pagination
+        page = max(page, 1)
+        limit = max(min(limit, 100), 1)
+
+        start = (page - 1) * limit
+
+        return {
+            "data": rows[start:start + limit],
+            "total": len(rows)
+        }
+
+# =========================================================
+# ROUTES: DELETE RESPONDEN
+# =========================================================
+
+@app.delete("/responden")
+async def delete_responden():
+    global RESPONDEN
+
+    # Kosongkan seluruh data responden
+    RESPONDEN = []
+
+    # Simpan perubahan
+    _save_data()
+
+    # Update seluruh feature
+    await bus.publish("feature1-update", _payload_feature1())
+    await bus.publish("feature2-update", _payload_feature2())
+    await bus.publish("feature3-update", _payload_feature3())
+    await bus.publish("feature4-update", _payload_feature4())
+
+    return {
+        "ok": True,
+        "message": "Data responden berhasil dihapus.",
+        "jumlah_responden": 0
+    }
+
+# =========================================================
 # ROUTES: FEATURE 1, 2 (REST fallback)
 # =========================================================
 

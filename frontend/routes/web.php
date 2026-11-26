@@ -5,6 +5,7 @@ use App\Http\Controllers\ControllerFitur1;
 use App\Http\Controllers\ControllerFitur2;
 use App\Http\Controllers\ControllerFitur3;
 use App\Http\Controllers\ControllerFitur4;
+use App\Http\Controllers\ControllerUpload;
 
 // Fitur 1
 Route::get('/', [ControllerFitur1::class, 'hardSkills']);
@@ -24,11 +25,13 @@ Route::get('/dashboard-tracer-study', [ControllerFitur3::class, 'dashboard']);
 // Fitur 4
 Route::get('/career-navigation/{tab?}', [ControllerFitur4::class, 'careerNavigation'])->where('tab', 'matcher');;
 Route::post('/career-navigation/match', [ControllerFitur4::class, 'match']);
-// Route::get('/career-navigation', function () {
-//     return view('base/fitur4');
+
+// Upload
+// Route::get('/master-data', [ControllerUpload::class, 'index'])->name('master-data.index');
+Route::get('/master-data', [ControllerUpload::class, 'index'])->name('base.upload.index');
+Route::post('/master-data/upload', [ControllerUpload::class, 'upload'])->name('base.upload');
+Route::delete('/master-data', [ControllerUpload::class, 'destroy'])->name('base.upload.destroy');
+
+// Route::get('/master-data', function () {
+//     return view('base/upload');
 // });
-
-
-Route::get('/master-data', function () {
-    return view('base/upload');
-});

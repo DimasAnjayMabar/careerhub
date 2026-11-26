@@ -47,7 +47,7 @@
     </nav>
 
     <!-- Dropdown Form -->
-    @isset($bidang)
+    @isset($semua)
         <div class="mt-6">
             <form method="GET">
                 <div class="mb-4">
@@ -60,6 +60,7 @@
                             class="appearance-none w-full bg-gray-100 text-[#0F294A] px-4 py-2.5 pr-12 rounded-lg border border-transparent cursor-pointer transition
                                 hover:bg-gray-200/70
                                 focus:outline-none focus:bg-white focus:border-[#2B72D6] focus:ring-2 focus:ring-[#2B72D6]/20">
+                            <option value="" @selected($bidang === null)>Semua Bidang</option>
                             @foreach ($bidangList as $b)
                                 <option value="{{ $b }}" @selected($b === $bidang)>{{ $b }}</option>
                             @endforeach
@@ -77,7 +78,7 @@
     @endisset
 
     <!-- isi content -->
-    <div class="mt-6">
+    <div class="mt-8 px-2">
         @yield('hardskill-content')
         @yield('softskill-content')
         @yield('sertifikasi-content')

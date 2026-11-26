@@ -10,7 +10,7 @@
     </div>
 
     <!-- Form Career Matcher -->
-    <form method="POST" action="/career-navigation/match">
+    <form method="POST" action="/career-navigation/match" class="pb-8">
         @csrf
         <div class="w-full bg-white border border-gray-200 rounded-xl p-6" data-picker-container>
             <div class="flex items-center gap-2.5 mb-6">
@@ -201,7 +201,7 @@
             <!-- Tombol -->
             <button type="submit"
                 class="bg-[#febb3d] hover:bg-[#E5A52F] text-white px-5 py-3 rounded-lg font-medium transition">
-                Hitung Rekomendasi Karier 🚀
+                Cari Rekomendasi Karier 🚀
             </button>
 
         </div>
@@ -313,67 +313,8 @@
     @endif
 
 
-    
-    <!-- INSIGHT SKILL PALING DICARI -->
-    <!-- ================================================= -->
-
-    <!-- @if (!empty($insight))
-
-        <div class="mt-12 mb-8">
-
-            <h3 class="text-xl font-semibold text-[#0F294A] mb-5">
-                Insight Skill yang Paling Sering Dipilih
-            </h3>
-
-            <div class="overflow-x-auto rounded-lg border border-gray-200">
-
-                <table class="min-w-full text-sm">
-
-                    <thead class="bg-[#1E3A8A] text-white text-left">
-
-                        <tr>
-                            <th class="px-4 py-3 w-20 text-center">No</th>
-                            <th class="px-4 py-3">Skill</th>
-                            <th class="px-4 py-3 text-center">
-                                Jumlah Dipilih
-                            </th>
-                        </tr>
-
-                    </thead>
-
-                    <tbody class="divide-y divide-gray-200">
-
-                        @foreach ($insight as $i => $row)
-
-                            <tr class="hover:bg-[#2B72D6]/5 transition">
-
-                                <td class="px-4 py-3 text-center text-gray-600">
-                                    {{ $i + 1 }}
-                                </td>
-
-                                <td class="px-4 py-3 font-medium text-[#0F294A]">
-                                    {{ $row['skill'] }}
-                                </td>
-
-                                <td class="px-4 py-3 text-center">
-                                    {{ $row['jumlah'] }}
-                                </td>
-
-                            </tr>
-
-                        @endforeach
-
-                    </tbody>
-
-                </table>
-
-            </div> -->
-
-        </div>
-
-    @endif
-
-
+    <!--  -->
+    <!-- Java Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const pickers = Array.from(document.querySelectorAll('[data-skill-picker]'));

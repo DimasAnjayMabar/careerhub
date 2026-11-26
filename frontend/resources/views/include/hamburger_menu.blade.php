@@ -9,10 +9,20 @@
     <!-- <div class="bg-white border-b-2 border-[#febb3d] flex items-center justify-between"></div> -->
 
     <!-- Daftar Menu Hamburger (Otomatis Menyala Saat Aktif) -->
-    <nav class="p-4 space-y-4">
-        <!-- Menu 1: Peta Kompetensi Dunia Kerja -->
+    <nav class="p-4 space-y-3">
+        <!-- Menu 1: Dashboard Tracer Study -->
+        <a href="/dashboard-tracer-study" 
+           class="flex items-center gap-3 px-3 py-3 rounded-lg font-medium transition {{ request()->is('dashboard-tracer-study*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
+            <!-- Ikon Dashboard -->
+            <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+            </svg>
+            <span>Dashboard Tracer Study</span>
+        </a>
+
+        <!-- Menu 2: Peta Kompetensi Dunia Kerja -->
         <a href="/" 
-           class="flex items-center gap-4 px-4 py-3 rounded-lg font-medium transition {{ request()->is('/', 'soft-skills*', 'sertifikasi*', 'matriks*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
+           class="flex items-center gap-3 px-3 py-3 rounded-lg font-medium transition {{ request()->is('/', 'soft-skills*', 'sertifikasi*', 'matriks*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
 
             <!-- Ikon Map  -->
             <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -21,9 +31,9 @@
             <span>Peta Kompetensi Dunia Kerja</span>
         </a>
 
-        <!-- Menu 2: Analisis Skill Gap -->
+        <!-- Menu 3: Analisis Skill Gap -->
         <a href="/skill-gap" 
-           class="flex items-center gap-4 px-4 py-3 rounded-lg font-medium transition {{ request()->is('skill-gap*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
+           class="flex items-center gap-3 px-3 py-3 rounded-lg font-medium transition {{ request()->is('skill-gap*', 'dibutuhkan-dirasakurang*', 'tren-angkatan*', 'waktu-tunggu*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
             <!-- Ikon Chart -->
             <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
@@ -31,19 +41,9 @@
             <span>Analisis Skill Gap</span>
         </a>
 
-        <!-- Menu 3: Dashboard Tracer Study -->
-        <a href="/dashboard-tracer-study" 
-           class="flex items-center gap-4 px-4 py-3 rounded-lg font-medium transition {{ request()->is('dashboard-tracer-study*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
-            <!-- Ikon Dashboard -->
-            <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
-            </svg>
-            <span>Dashboard Tracer Study</span>
-        </a>
-
         <!-- Menu 4: Career Navigation System -->
         <a href="/career-navigation" 
-           class="flex items-center gap-4 px-4 py-3 rounded-lg font-medium transition {{ request()->is('career-navigation*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
+           class="flex items-center gap-3 px-3 py-3 rounded-lg font-medium transition {{ request()->is('career-navigation*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
             <!-- Ikon Compas -->
             <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-linejoin="round" />
@@ -54,7 +54,7 @@
 
         <!-- Master data & upload -->
         <a href="/master-data" 
-           class="flex items-center gap-4 px-4 py-3 rounded-lg font-medium transition {{ request()->is('master-data*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
+           class="flex items-center gap-3 px-3 py-3 rounded-lg font-medium transition {{ request()->is('master-data*') ? 'bg-[#1E3A8A] text-white shadow-sm' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
             <!-- Ikon master data buat upload -->
             <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
@@ -81,6 +81,6 @@
         }
 
         if (toggleBtn) toggleBtn.addEventListener('click', toggleSidebar);
-        if (closeBtn) closeBtn.addEventListener('click', toggleSidebar);
+        // if (closeBtn) closeBtn.addEventListener('click', toggleSidebar);
     });
 </script>

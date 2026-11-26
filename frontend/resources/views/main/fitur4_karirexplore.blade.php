@@ -75,64 +75,83 @@
         <div class="grid grid-cols-2 gap-8 mb-6">
             <!-- Bidang 1 -->
             <div class="min-w-0">
-                <div class="flex gap-2">
-                    <h3 class="text-xl items-center">💼</h3>
-                    <span class="text-xl font-semibold text-[#0F294A] mb-5">
-                        {{ $bidang1 }}
-                    </span>
-                </div>
 
-                <!-- Hard Skills -->
-                <div class="mb-6">
-                    <h4 class="font-semibold text-[#0F294A] mb-4">Hard Skills Teratas</h4>
-
-                    <div class="flex flex-wrap gap-2">
-                        @forelse ($card1['hard'] ?? [] as $row)
-                            <span class="px-3 py-2 bg-blue-50 text-[#0F294A] rounded-lg text-sm">
-                                {{ $row['skill'] }}
-                            </span>
-                        @empty
-                            <p class="text-sm text-gray-400">Belum ada data hard skills</p>
-                        @endforelse
+                @if (empty($bidang1))
+                    <div class="flex flex-col items-center justify-center py-12 text-center">
+                        <p class="text-3xl items-center opacity-40">💼</p>
+                        <p class="mt-3 text-sm font-normal text-gray-400">
+                            Pilih bidang untuk melihat skill
+                        </p>
                     </div>
-                </div>
 
-                <!-- Soft Skills -->
-                <div class="mb-6">
-                    <h4 class="font-semibold text-[#0F294A] mb-4">Soft Skills Teratas</h4>
-
-                    <div class="flex flex-wrap gap-2">
-                        @forelse ($card1['soft'] ?? [] as $row)
-                            <span class="px-3 py-2 bg-blue-50 text-[#0F294A] rounded-lg text-sm">
-                                {{ $row['skill'] }}
-                            </span>
-                        @empty
-                            <p class="text-sm text-gray-400">Belum ada data soft skills</p>
-                        @endforelse
+                @else
+                    <div class="flex gap-2">
+                        <h3 class="text-xl items-center">💼</h3>
+                        <span class="text-xl font-semibold text-[#0F294A] mb-5">
+                            {{ $bidang1 }}
+                        </span>
                     </div>
-                </div>
 
-                <!-- Sertifikasi -->
-                <div class="mb-6">
-                    <h4 class="font-semibold text-[#0F294A] mb-4">Sertifikasi Bermanfaat</h4>
+                    <!-- Hard Skills -->
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-[#0F294A] mb-4">Hard Skills Teratas</h4>
 
-                    <div class="flex flex-wrap gap-2">
-                        @forelse ($card1['sertifikasi'] ?? [] as $row)
-                            <span class="px-3 py-2 bg-blue-50 text-[#0F294A] rounded-lg text-sm">
-                                {{ $row['sertifikasi'] }}
-                            </span>
-                        @empty
-                            <p class="text-sm text-gray-400">Belum ada data sertifikasi</p>
-                        @endforelse
+                        <div class="flex flex-wrap gap-2">
+                            @forelse ($card1['hard'] ?? [] as $row)
+                                <span class="px-3 py-2 bg-blue-50 text-[#0F294A] rounded-lg text-sm">
+                                    {{ $row['skill'] }}
+                                </span>
+                            @empty
+                                <p class="text-sm text-gray-400">Belum ada data hard skills</p>
+                            @endforelse
+                        </div>
                     </div>
-                </div>
+
+                    <!-- Soft Skills -->
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-[#0F294A] mb-4">Soft Skills Teratas</h4>
+
+                        <div class="flex flex-wrap gap-2">
+                            @forelse ($card1['soft'] ?? [] as $row)
+                                <span class="px-3 py-2 bg-blue-50 text-[#0F294A] rounded-lg text-sm">
+                                    {{ $row['skill'] }}
+                                </span>
+                            @empty
+                                <p class="text-sm text-gray-400">Belum ada data soft skills</p>
+                            @endforelse
+                        </div>
+                    </div>
+
+                    <!-- Sertifikasi -->
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-[#0F294A] mb-4">Sertifikasi Bermanfaat</h4>
+
+                        <div class="flex flex-wrap gap-2">
+                            @forelse ($card1['sertifikasi'] ?? [] as $row)
+                                <span class="px-3 py-2 bg-blue-50 text-[#0F294A] rounded-lg text-sm">
+                                    {{ $row['sertifikasi'] }}
+                                </span>
+                            @empty
+                                <p class="text-sm text-gray-400">Belum ada data sertifikasi</p>
+                            @endforelse
+                        </div>
+                    </div>
+                
+                @endif
             </div>
 
 
             <!-- Bidang 2 -->
-         
+            <div class="min-w-0 lg:border-l lg:border-gray-200 lg:pl-8">
 
-                <div class="min-w-0 lg:border-l lg:border-gray-200 lg:pl-8">
+                @if (empty($bidang2))
+                    <div class="flex flex-col items-center justify-center py-12 text-center">
+                        <p class="text-3xl opacity-50">💼</p>
+                        <p class="mt-3 text-sm font-normal text-gray-400">
+                            Pilih bidang untuk melihat skill
+                        </p>
+                    </div>
+                @else
                     <div class="flex gap-2">
                         <h3 class="text-xl items-center">💼</h3>
                         <span class="text-xl font-semibold text-[#0F294A] mb-5">
@@ -142,8 +161,7 @@
 
                     <!-- Hard Skills -->
                     <div class="mb-6">
-                        <h4 class="font-semibold text-[#0F294A] mb-3">Hard Skills Teratas</h4>
-
+                        <h4 class="font-semibold text-[#0F294A] mb-4">Hard Skills Teratas</h4>
                         <div class="flex flex-wrap gap-2">
                             @forelse ($card2['hard'] ?? [] as $row)
                                 <span class="px-3 py-2 bg-blue-50 text-[#0F294A] rounded-lg text-sm">
@@ -157,8 +175,7 @@
 
                     <!-- Soft Skills -->
                     <div class="mb-6">
-                        <h4 class="font-semibold text-[#0F294A] mb-3">Soft Skills Teratas</h4>
-
+                        <h4 class="font-semibold text-[#0F294A] mb-4">Soft Skills Teratas</h4>
                         <div class="flex flex-wrap gap-2">
                             @forelse ($card2['soft'] ?? [] as $row)
                                 <span class="px-3 py-2 bg-blue-50 text-[#0F294A] rounded-lg text-sm">
@@ -172,8 +189,7 @@
 
                     <!-- Sertifikasi -->
                     <div class="mb-6">
-                        <h4 class="font-semibold text-[#0F294A] mb-3">Sertifikasi Bermanfaat</h4>
-
+                        <h4 class="font-semibold text-[#0F294A] mb-4">Sertifikasi Bermanfaat</h4>
                         <div class="flex flex-wrap gap-2">
                             @forelse ($card2['sertifikasi'] ?? [] as $row)
                                 <span class="px-3 py-2 bg-blue-50 text-[#0F294A] rounded-lg text-sm">
@@ -181,12 +197,11 @@
                                 </span>
                             @empty
                                 <p class="text-sm text-gray-400">Belum ada data sertifikasi</p>
-
                             @endforelse
                         </div>
                     </div>
-                </div>
-            
+                @endif
+            </div>
 
         </div>
 

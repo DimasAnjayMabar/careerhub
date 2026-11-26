@@ -1,3 +1,16 @@
 __pycache__
 .venv
 venv
+
+# Data upload lokal
+/backend/data_storage.json
+/backend/master_storage.json
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+**/__pycache__/
+**/.venv/

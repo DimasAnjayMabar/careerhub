@@ -15,55 +15,36 @@
     @else
 
         @php
-            $skill = collect($banding)
-                ->pluck('skill')
-                ->values();
+            $batas   = 15;
+            $grafik  = collect($banding)->take($batas);
 
-            $dibutuhkan = collect($banding)
-                ->pluck('dibutuhkan')
-                ->values();
+            $skill        = $grafik->pluck('skill')->values();
+            $dibutuhkan   = $grafik->pluck('dibutuhkan')->values();
 
-            // Key backend masih dirasa_kurang,
-            // tetapi label frontend menggunakan Tidak Disebut.
-            $tidakDisebut = collect($banding)
-                ->pluck('dirasa_kurang')
-                ->values();
+            $tidakDisebut = $grafik->pluck('dirasa_kurang')->values();
         @endphp
 
         <!-- Analisis Chart -->
-        <div class="w-full bg-white border border-gray-200 rounded-xl p-6 mb-10">
+        <div class="w-full bg-white border border-gray-200 rounded-xl p-4 mb-12">
+            <h3 class="text-[#0F294A] text-lg font-semibold">Perbandingan Skill yang Dibutuhkan dan Tidak Disebut</h3>
+            <p class="mt-2 mb-6 text-sm text-gray-500">
+                Perbandingan skill yang dibutuhkan dan tidak disebut oleh alumni
+            </p>
 
-            <div class="flex items-center gap-2.5">
-                <svg class="w-8 h-8 shrink-0" fill="none" stroke="#0F294A"
-                    stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" />
-                </svg>
-
-                <span class="text-[#0F294A] text-lg font-semibold">
-                    Chart Perbandingan Skill Dibutuhkan vs Tidak Disebut
-                </span>
-            </div>
-
-            <!-- Catatan -->
-            @if ($catatan)
-                <p class="text-xs text-gray-500 mt-4">
-                    {{ $catatan }}
-                </p>
-            @endif
-
-            <div class="relative w-full min-w-0 h-[450px] mt-8">
+            <div class="relative w-full min-w-0 h-[424px] mt-8">
                 <canvas id="dibutuhkanChart"></canvas>
             </div>
 
         </div>
 
         <!-- Chart.js -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
         <script>
-            const skill = @json($skill);
-            const dibutuhkan = @json($dibutuhkan);
+            const MAX_LABEL = 16;      // batas karakter label sumbu Y
+            const Y_AXIS_WIDTH = 112;  // lebar tetap area label (px)
+
+            const skill        = @json($skill);
+            const dibutuhkan   = @json($dibutuhkan);
             const tidakDisebut = @json($tidakDisebut);
 
             new Chart(document.getElementById('dibutuhkanChart'), {
@@ -87,29 +68,40 @@
                         }
                     ]
                 },
-
                 options: {
                     indexAxis: 'y',
                     responsive: true,
                     maintainAspectRatio: false,
-
                     plugins: {
                         legend: {
                             display: true,
                             position: 'top',
                             align: 'end'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                // tooltip menampilkan teks lengkap
+                                title: (items) => skill[items[0].dataIndex]
+                            }
                         }
                     },
-
                     scales: {
                         x: {
                             beginAtZero: true,
+                            ticks: { precision: 0 },
+                            title: { display: true, text: 'Jumlah' }
+                        },
+                        y: {
+                            // kunci lebar area label supaya posisi grafik konsisten
+                            afterFit: (scale) => { scale.width = Y_AXIS_WIDTH; },
                             ticks: {
-                                precision: 0
-                            },
-                            title: {
-                                display: true,
-                                text: 'Jumlah Alumni'
+                                autoSkip: false,
+                                callback: function (value) {
+                                    const label = this.getLabelForValue(value);
+                                    return label.length > MAX_LABEL
+                                        ? label.slice(0, MAX_LABEL - 1) + '…'
+                                        : label;
+                                }
                             }
                         }
                     }
@@ -119,18 +111,11 @@
 
         <!--  -->
         <!--  Tabel -->
-        <div class="w-full border border-gray-200 p-6 rounded-xl mb-6">
-            <div class="flex items-center gap-2.5">
-                <svg class="w-8 h-8 shrink-0" fill="none"stroke="#0F294A" stroke-width="1.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0 1 12 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
-                </svg>
+        <div class="w-full bg-white border border-gray-200 rounded-xl p-4 mb-8">
+            <h3 class=" text-[#0F294A] text-lg font-medium">Perbandingan Skill yang Dibutuhkan dan Tidak Disebut</h3>
+            <p class="mt-2 mb-6 text-sm text-gray-500">Tabel perbandingan skill yang dibutuhkan namun tidak disebut</p>
 
-                <span class="text-[#0F294A] text-lg font-semibold">
-                    Tabel Perbandingan Skill Dibutuhkan vs Tidak Disebut
-                </span>
-            </div>
-
-            <div class="mt-6 overflow-x-auto rounded-lg border border-gray-200">
+            <div class="mb-2 overflow-x-auto rounded-lg border border-gray-200">
                 <table class="min-w-full text-sm">
                     <thead class="bg-[#1E3A8A] text-left text-white text-md">
                         <tr>

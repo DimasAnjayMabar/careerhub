@@ -109,14 +109,10 @@ def gap_view_dibutuhkan_vs_kurang(
     return rows[:top_n]
 
 
-def tren_gap_antar_angkatan(
-    responden: list[dict],
-    skill_state: list[dict],
-    top_n: int = 5,
-) -> dict[int, list[dict]]:
-    """Top N skill absen per angkatan (untuk line chart antar tahun)."""
+def tren_gap_antar_angkatan(responden, skill_state, top_n=5):
     skill_map = _skill_map(skill_state)
     per_angkatan: dict[int, Counter[str]] = defaultdict(Counter)
+    total: Counter[str] = Counter()
 
     for r in responden:
         ang = r["angkatan"]
@@ -124,10 +120,12 @@ def tren_gap_antar_angkatan(
             s = skill_map.get(sid)
             if s:
                 per_angkatan[ang][s["nama_skill"]] += 1
+                total[s["nama_skill"]] += 1
 
-    # urutkan angkatan menaik (2020 → 2022) untuk line chart
+    top_skills = [k for k, _ in total.most_common(top_n)]
+
     return {
-        ang: [{"skill": k, "jumlah": v} for k, v in counter.most_common(top_n)]
+        ang: [{"skill": s, "jumlah": counter.get(s, 0)} for s in top_skills]
         for ang, counter in sorted(per_angkatan.items())
     }
 

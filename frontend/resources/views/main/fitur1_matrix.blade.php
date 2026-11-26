@@ -29,7 +29,7 @@
         @endphp
 
         <!-- Informasi -->
-        <p class="mt-6 text-sm font-medium text-gray-800">
+        <p class="text-sm font-medium text-gray-800">
             Informasi</p>
         <div class="flex mt-2 gap-10">
             <p class="text-xs text-gray-600">

@@ -25,27 +25,27 @@
         <div class="pb-2 border-b-2 {{ request()->is('dibutuhkan-dirasakurang*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
             <a href="/dibutuhkan-dirasakurang"
                 class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('dibutuhkan-dirasakurang*') ? 'text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
-                Dibutuhkan Industri VS Dirasa Kurang
+                Dibutuhkan Industri & Tidak Disebut
             </a>
         </div>
 
         <div class="pb-2 border-b-2 {{ request()->is('tren-angkatan*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
             <a href="/tren-angkatan"
                 class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('tren-angkatan*') ? 'text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
-                Tren Antar Angkatan
+                Tren Skill Tidak Disebut
             </a>
         </div>
 
         <div class="pb-2 border-b-2 {{ request()->is('waktu-tunggu*') ? 'border-[#1E3A8A]' : 'border-transparent' }}">
             <a href="/waktu-tunggu"
                 class="block px-4 py-2 text-center rounded-lg font-medium transition {{ request()->is('waktu-tunggu*') ? 'text-[#1E3A8A]' : 'text-gray-700 hover:bg-[#2B72D6]/10 hover:text-[#2B72D6]' }}">
-                Waktu Tunggu VS Gap
+                Waktu Tunggu Antar Angkatan
             </a>
         </div>
     </div>
 
     <!-- isi content -->
-    <div class="mt-10">
+    <div class="mt-6 px-2">
         @yield('skillgap-content')
         @yield('dibutuhkan-content')
         @yield('tren-angkatan-content')

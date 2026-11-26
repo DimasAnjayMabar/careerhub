@@ -39,4 +39,8 @@ return [
         'url' => env('PYTHON_API_URL'),
     ],
 
+    'career_api' => [
+        'url' => env('CAREER_API_URL', 'http://127.0.0.1:8001'),
+    ],
+
 ];
